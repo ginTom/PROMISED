@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch
+torchvision
+torchaudio
+tensorboard
+numpy < 1.23
+pandas
+scikit-learn
+imblearn
+matplotlib
+jupyter
