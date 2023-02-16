@@ -43,6 +43,20 @@ if (!requireNamespace("BiocManager", quietly = TRUE)) {
 BiocManager::install('mixOmics')
 ```
 
+## SNP features selection
+A logistic regression (LR) model with recursive feature elimination (RFE) was fitted on SNPs data to select the first 100 discriminant features using `sklearn` python package
+
+```python
+snp_path = 'path/to/snp/data'
+snp_data = pd.read_csv(snp_path)
+snp_label = snp_data['class']
+snp_data.drop(columns=["class"], inplace=True)
+
+model = LogisticRegression()
+rfe = RFE(model, n_features_to_select=100)
+fit = rfe.fit(snp_data, snp_label)
+```
+
 ## Prepare training data
 Launch `CTGAN_main.py` to generate and obtain training data for each omic:
 ```cmd
