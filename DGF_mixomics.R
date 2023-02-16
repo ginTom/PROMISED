@@ -14,7 +14,7 @@ library(kableExtra)
 
 
 rm(list = ls())
-setwd("C:/Users/tom_m/Desktop/PhD/DGF-Kidney/MOGONET/DGF")
+setwd("path/to/work/directory")
 
 prep.fun = function(x){
   table(unlist(sapply(x,class)))
