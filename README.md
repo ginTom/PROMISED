@@ -41,3 +41,7 @@ Launch `CTGAN_main.py` to generate and obtain training data for each omic:
 - `{1,2}_featname.csv`: feature names for each omic
 - `{1,2}_tr.csv`: traing data
 - `{1,2}_te.csv`: test data
+
+## Train MOGONET
+Create folder with all training data;
+Edit `MOGONET/main_mogonet.py` with `data_folder` and `view_list`
