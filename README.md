@@ -33,18 +33,32 @@ Clone MOGONET repository from Github and install dependencies
 git clone https://github.com/txWang/MOGONET.git
 pip install -r MOGONET_requirements.txt
 ```
+## mixOmics
+Install the mixOmics package from Bioconductor; you may need to install the latest R version and the latest BiocManager package installed.
+```R
+## install BiocManager if not installed 
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager") }
+## install mixOmics 
+BiocManager::install('mixOmics')
+```
 
 ## Prepare training data
 Launch `CTGAN_main.py` to generate and obtain training data for each omic:
+```cmd
+python CTGAN_main.py
+```
 - `label_tr.csv`: labels for trainin set
 - `label_te.csv`: labels for test set
 - `{1,2}_featname.csv`: feature names for each omic
 - `{1,2}_tr.csv`: traing data
 - `{1,2}_te.csv`: test data
 
-## Train MOGONET
+# MOGONET
 Create folder with all training data;
 Customize `data_folder` and `view_list` in `MOGONET/main_mogonet.py`
 
 ## Biomarkers identification
 Customize `data_folder` and `view_list` in `MOGONET/main_biomarker.py`
+
+# mixOmics
