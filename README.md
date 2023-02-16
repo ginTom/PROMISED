@@ -62,3 +62,4 @@ Customize `data_folder` and `view_list` in `MOGONET/main_mogonet.py`
 Customize `data_folder` and `view_list` in `MOGONET/main_biomarker.py`
 
 # mixOmics
+Launch `DGF_mixomics.R`
