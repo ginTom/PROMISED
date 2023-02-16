@@ -44,4 +44,7 @@ Launch `CTGAN_main.py` to generate and obtain training data for each omic:
 
 ## Train MOGONET
 Create folder with all training data;
-Edit `MOGONET/main_mogonet.py` with `data_folder` and `view_list`
+Customize `data_folder` and `view_list` in `MOGONET/main_mogonet.py`
+
+## Biomarkers identification
+Customize `data_folder` and `view_list` in `MOGONET/main_biomarker.py`
