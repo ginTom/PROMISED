@@ -36,8 +36,8 @@ pip install -r MOGONET_requirements.txt
 
 ## Prepare training data
 Launch `CTGAN_main.py` to generate and obtain training data for each omic:
-- label_tr.csv: labels for trainin set
-- label_te.csv: labels for test set
-- {1,2}_featname.csv: feature names for each omic
-- {1,2}_tr.csv: traing data
-- {1,2}_te.csv: test data
+- `label_tr.csv`: labels for trainin set
+- `label_te.csv`: labels for test set
+- `{1,2}_featname.csv`: feature names for each omic
+- `{1,2}_tr.csv`: traing data
+- `{1,2}_te.csv`: test data
