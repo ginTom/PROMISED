@@ -34,7 +34,7 @@ git clone https://github.com/txWang/MOGONET.git
 pip install -r MOGONET_requirements.txt
 ```
 ## mixOmics
-Install the mixOmics package from Bioconductor; you may need to install the latest R version and the latest BiocManager package installed.
+Install the mixOmics R package from Bioconductor; you may need to install the latest R version and the latest BiocManager package installed.
 ```R
 ## install BiocManager if not installed 
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
